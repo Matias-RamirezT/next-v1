@@ -1,9 +1,11 @@
-export default function Props({ nombre }) {
+interface Props {
+    nombre: string;
+}
 
-    return(
-
+export default function Props({ nombre }: Props) {
+    return (
         <div>
-        {nombre}
+            {nombre}
         </div>
     );
 }
